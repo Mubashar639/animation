@@ -1,0 +1,254 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.title {
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.links .link {
+  margin-top: 20px;
+}
+
+.component {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.component.first-component {
+  background-color: gray;
+  position: relative;
+}
+
+.first-component--inside-scroller {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+}
+
+.component.second-component {
+  background-color: white;
+  animation: colorani 4s linear;
+}
+
+@keyframes colorani {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: rgba(0, 0, 255, 0.4);
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+.component.third-component {
+  background-color: blue;
+}
+
+.component.fourth-component {
+  background-color: yellow;
+}
+
+.component.fifth-component {
+  background-color: purple;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.pagination-additional-class {
+  margin: 0;
+  position: fixed;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination-additional-class > li:not(:last-of-type) > a,
+.pagination-additional-class > li:not(:last-of-type) > span {
+  margin-right: 50px;
+}
+
+.demo-page-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.demo-page-contain__hint {
+  margin-bottom: 20px;
+}
+
+#container {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 2000;
+  top: 28%;
+  left: -7%;
+  border-radius: 50%;
+}
+.container1 {
+  animation: startMain 1s both linear reverse;
+}
+.item1 {
+  animation: startInner 1s both linear reverse;
+  transform: rotate(50.42deg);
+}
+.container2 {
+  animation: startMain2 1s both linear reverse;
+}
+.item2 {
+  animation: startInner2 1s both linear reverse;
+  transform: rotate(100.42deg);
+}
+.container3 {
+  animation: startMain3 1s both linear reverse;
+}
+.item3 {
+  animation: startInner3 1s both linear reverse;
+  transform: rotate(150.42deg);
+}
+
+.container4 {
+  animation: startMain4 1s both linear reverse;
+}
+.item4 {
+  animation: startInner4 1s both linear reverse;
+  transform: rotate(200.42deg);
+}
+.container5 {
+  animation: startMain5 1s both linear reverse;
+}
+.item5 {
+  animation: startInner6 1s both linear reverse;
+  transform: rotate(251.42deg);
+}
+.container6 {
+  animation: startMain6 1s both linear reverse;
+}
+.item6 {
+  animation: startInner6 1s both linear reverse;
+  transform: rotate(310.42deg);
+}
+.item {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  background: #f00;
+}
+@keyframes startMain {
+  0% {
+    transform: rotate(-50.42deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes startInner {
+  100% {
+    transform: rotate(0.42deg);
+  }
+}
+@keyframes startMain2 {
+  0% {
+    transform: rotate(-100.82deg);
+  }
+  100% {
+    transform: rotate(-50.42deg);
+  }
+}
+
+@keyframes startInner2 {
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes startMain3 {
+  0% {
+    transform: rotate(-151.2deg);
+  }
+  100% {
+    transform: rotate(-100.82deg);
+  }
+}
+
+@keyframes startInner3 {
+  100% {
+    transform: rotate(100.42deg);
+  }
+}
+
+@keyframes startMain4 {
+  0% {
+    transform: rotate(-200.6deg);
+  }
+  100% {
+    transform: rotate(-151.2deg);
+  }
+}
+
+@keyframes startInner4 {
+  100% {
+    transform: rotate(151.42deg);
+  }
+}
+
+@keyframes startMain5 {
+  0% {
+    transform: rotate(-251deg);
+  }
+  100% {
+    transform: rotate(-200.6deg);
+  }
+}
+
+@keyframes startInner5 {
+  100% {
+    transform: rotate(200.6deg);
+  }
+}
+
+@keyframes startMain6 {
+  0% {
+    transform: rotate(-310deg);
+  }
+  100% {
+    transform: rotate(-251deg);
+  }
+}
+
+@keyframes startInner6 {
+  /* 0% {
+    transform: rotate(0deg);
+  } */
+  100% {
+    transform: rotate(251.42deg);
+  }
+}

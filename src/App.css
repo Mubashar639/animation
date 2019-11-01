@@ -1,0 +1,144 @@
+@import '~antd/dist/antd.css';
+.ant-menu-item , .submenu-title-wrapper{
+  color: black;
+  font-size: 12px;
+  font-weight: bold;
+  height: 70px;
+}
+.ant-menu-horizontal::after {
+  height: 2px;
+  background-color: yellow;
+  width: 100%;
+}
+.logo{
+  height: 40px;
+}
+hr {
+  height: 1px;
+  color: blue;
+  background-color :lightblue;
+  border: none;
+  }
+  .submenu-title-wrapper{
+    margin-top:  0.001em;
+    margin-bottom: 0.001em;
+  }
+  .conttectBar{
+    color: #01539F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+  .frontBanner {
+    margin-left: -200px;
+    height: auto;
+  }
+
+@media only screen and (max-width: 1050px) {
+  .frontBanner {
+    margin-left: -800px;
+    height: auto;
+  }
+  .Banner1{
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .frontBanner {
+    margin-left: -1050px;
+    margin-top: -100px;
+    height: auto;
+  }
+ 
+  .banner{
+    height: auto !important;
+  }
+  .headerlogo{
+    width: 50px;
+
+  }
+}
+  .ant-carousel .slick-slide {
+   margin-top: 10px;
+    
+ 
+    background: #364d79;
+    overflow: hidden;
+  }
+ .gridItem{
+  position: relative;
+  text-align: center;
+  padding: 40px 35px;
+  overflow: hidden;
+   min-width: 360px;
+  margin-bottom: 20px;
+  cursor:pointer;
+  background: #F2F9FF; 
+
+
+} 
+
+ .gridB:hover{
+  padding: 40px 35px;
+  min-width: 360px;
+  position: relative;
+  text-align: center;
+  top:-40px;
+  left:-35px;
+
+  margin-bottom: 20px;
+  background-color: rgb(1, 82,159); 
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* color: rgba(255,255,255, 1) !important; */
+
+} 
+.gridItem:hover{
+  background: url(./asset/promo/01.jpg) no-repeat 0 0; 
+}
+.girdHeading{
+  font-family: 'Raleway', sans-serif;
+  /* color: #1c1c1c; */
+  line-height: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contentA:hover,.contentA p:hover, .girdHeading:hover{
+  z-index: 1000px;
+   color: rgba(255,255,255, 1) !important; 
+   font-weight: bold;
+}
+.Servives{
+  margin-top: 100px;
+  background: url(./asset/background/01.jpg) no-repeat 0 0; 
+  background-size: cover;
+  background-position: center;
+
+  width:100%;
+  height: 573px;
+}
+.coverService{
+  z-index: 100px;
+  padding: 100px auto auto auto;
+  background-color: rgba(0,0,0,.6); 
+  width:100%;
+  height: 573px;
+}
+.servicePara{
+
+  color: #c4c4c4;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-top: 10px;
+    text-align: center;
+}
+.serviceHeading{
+  font-weight: 700;
+  margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}

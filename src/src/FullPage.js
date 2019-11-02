@@ -1,11 +1,13 @@
 import React from "react";
 // import { Pager } from "react-bootstrap";
 import ReactPageScroller from "react-page-scroller";
-import FirstComponent from "./FirstComponent";
-import SecondComponent from "./SecondComponent";
-import ThirdComponent from "./ThirdComponent";
-import FourthComponent from "./FourthComponent";
-import FifthComponent from "./FifthComponent";
+import FirstComponent from "./first/FirstComponent";
+import SecondComponent from "./sencond/SecondComponent";
+import ThirdComponent from "./third/ThirdComponent";
+import FourthComponent from "./four/FourthComponent";
+import FifthComponent from "./fifth/FifthComponent";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 import "./index.css";
 const $ = window.$
@@ -46,9 +48,9 @@ export default class FullPage extends React.Component {
             var y = Math.round(
                 height / 2 + radius * Math.sin(angle) - $(this).height() / 2
             );
-            if (window.console) {
-                console.log($(this).text(), x, y);
-            }
+            // if (window.console) {
+            //     console.log($(this).text(), x, y);
+            // }
             $(this).css({
                 left: x + "px",
                 top: y + "px"
@@ -85,14 +87,16 @@ export default class FullPage extends React.Component {
                 <div class={`item ${animClass}`}>7</div>
 
             </div>
-            <ReactPageScroller ref={c => this._pageScroller = c} pageOnChange={this.pageOnChange}>
+            <ReactPageScroller ref={c => this._pageScroller = c}
+                animationTimer={0}
+                pageOnChange={this.pageOnChange}>
                 <FirstComponent />
                 <SecondComponent />
                 <ThirdComponent />
                 <FourthComponent goToPage={this.goToPage} />
                 <FifthComponent />
                 <FifthComponent />
-                <FifthComponent />
+
 
             </ReactPageScroller>
             {/* <Pager className="pagination-additional-class" bsSize="large">

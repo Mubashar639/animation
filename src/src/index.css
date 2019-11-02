@@ -29,7 +29,6 @@ body {
 
 .component.first-component {
   background-color: gray;
-  position: relative;
 }
 
 .first-component--inside-scroller {
@@ -39,8 +38,7 @@ body {
 }
 
 .component.second-component {
-  background-color: white;
-  animation: colorani 4s linear;
+  background-color: rgb(30, 14, 90);
 }
 
 @keyframes colorani {
@@ -110,46 +108,46 @@ h2 {
   border-radius: 50%;
 }
 .container1 {
-  animation: startMain 1s both linear reverse;
+  animation: startMain 0.5s both linear reverse;
 }
 .item1 {
-  animation: startInner 1s both linear reverse;
+  animation: startInner 0.5s both linear reverse;
   transform: rotate(50.42deg);
 }
 .container2 {
-  animation: startMain2 1s both linear reverse;
+  animation: startMain2 0.5s both linear reverse;
 }
 .item2 {
-  animation: startInner2 1s both linear reverse;
+  animation: startInner2 0.5s both linear reverse;
   transform: rotate(100.42deg);
 }
 .container3 {
-  animation: startMain3 1s both linear reverse;
+  animation: startMain3 0.5s both linear reverse;
 }
 .item3 {
-  animation: startInner3 1s both linear reverse;
+  animation: startInner3 0.5s both linear reverse;
   transform: rotate(150.42deg);
 }
 
 .container4 {
-  animation: startMain4 1s both linear reverse;
+  animation: startMain4 0.5s both linear reverse;
 }
 .item4 {
-  animation: startInner4 1s both linear reverse;
+  animation: startInner4 0.5s both linear reverse;
   transform: rotate(200.42deg);
 }
 .container5 {
-  animation: startMain5 1s both linear reverse;
+  animation: startMain5 0.5s both linear reverse;
 }
 .item5 {
-  animation: startInner6 1s both linear reverse;
+  animation: startInner6 0.5s both linear reverse;
   transform: rotate(251.42deg);
 }
 .container6 {
-  animation: startMain6 1s both linear reverse;
+  animation: startMain6 0.5s both linear reverse;
 }
 .item6 {
-  animation: startInner6 1s both linear reverse;
+  animation: startInner6 0.5s both linear reverse;
   transform: rotate(310.42deg);
 }
 .item {

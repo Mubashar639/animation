@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react'
-import image from "./2.jpg"
+import image from "./6.jpg"
 
 export default class componentName extends Component {
     state = {
@@ -15,7 +15,7 @@ export default class componentName extends Component {
         return (
             <div className="mySecond-compunent-a">
                 <img className="image-second" src={image} alt="some issue " />
-                <h1 className="animated swing delay-1s" > This is second 3rd text  </h1>
+                <h1 className="animated flash delay-1s" > This is second 6th text  </h1>
             </div>
         )
     }

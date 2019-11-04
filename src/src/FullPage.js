@@ -6,10 +6,15 @@ import SecondComponent from "./sencond/SecondComponent";
 import ThirdComponent from "./third/ThirdComponent";
 import FourthComponent from "./four/FourthComponent";
 import FifthComponent from "./fifth/FifthComponent";
-import ScrollAnimation from 'react-animate-on-scroll';
+import SixthComponent from "./sixth/sixthComponent";
+import SevenComponent from "./seventh/seventhComponent";
 
+
+import Jfunction from "./jquery"
 
 import "./index.css";
+import "./downanimation.css";
+
 const $ = window.$
 
 export default class FullPage extends React.Component {
@@ -29,34 +34,22 @@ export default class FullPage extends React.Component {
     };
 
     pageOnChange = (number) => {
-        console.log(number)
+        const { currentPage } = this.state
+        console.log(currentPage + " new page" + number)
+        if (currentPage < number) {
+            this.setState({ currentPage: number, animClass: "item" + (number - 1), conanima: "container" + (number - 1) });
+        } else if (currentPage === number) {
+            this.setState({ currentPage: number, animClass: "item" + (number - 1) + "down", conanima: "container" + (number - 1) + "down" });
+        }
+        else {
+            this.setState({ currentPage: number, animClass: "item" + (number) + "down", conanima: "container" + (number) + "down" });
 
-        this.setState({ currentPage: number, animClass: "item" + (number - 1), conanima: "container" + (number - 1) });
-    };
+        }
+    }
+
+
     componentDidMount() {
-        var radius = 100; // adjust to move out items in and out
-        var fields = $(".item"),
-            container = $("#container"),
-            width = container.width(),
-            height = container.height();
-        var angle = 0,
-            step = (2 * Math.PI) / fields.length;
-        fields.each(function () {
-            var x = Math.round(
-                width / 2 + radius * Math.cos(angle) - $(this).width() / 2
-            );
-            var y = Math.round(
-                height / 2 + radius * Math.sin(angle) - $(this).height() / 2
-            );
-            // if (window.console) {
-            //     console.log($(this).text(), x, y);
-            // }
-            $(this).css({
-                left: x + "px",
-                top: y + "px"
-            });
-            angle += step;
-        });
+        Jfunction($)
     }
 
     getPagesNumbers = () => {
@@ -78,24 +71,27 @@ export default class FullPage extends React.Component {
         const { animClass } = this.state
         return <React.Fragment>
             <div id="container" className={this.state.conanima} >
-                <div class={`item ${animClass}`}>1</div>
-                <div class={`item ${animClass}`}>2</div>
-                <div class={`item ${animClass}`}>3</div>
-                <div class={`item ${animClass}`}>4</div>
-                <div class={`item ${animClass}`}>5</div>
-                <div class={`item ${animClass}`}>6</div>
-                <div class={`item ${animClass}`}>7</div>
+                <div style={{ backgroundColor: "red" }} class={`item ${animClass}`}>text 1</div>
+                <div style={{ backgroundColor: "green" }} class={`item ${animClass}`}>text 2</div>
+                <div style={{ backgroundColor: "blue" }} class={`item ${animClass}`}>text 3</div>
+                <div style={{ backgroundColor: "white" }} class={`item ${animClass}`}>text 4</div>
+                <div style={{ backgroundColor: "oring" }} class={`item ${animClass}`}>text 5</div>
+                <div style={{ backgroundColor: "offwhite" }} class={`item ${animClass}`}>text 6</div>
+                <div style={{ backgroundColor: "rgb(23,545,56" }} class={`item ${animClass}`}>text 7</div>
 
             </div>
             <ReactPageScroller ref={c => this._pageScroller = c}
-                animationTimer={0}
+                animationTimer={100}
+                transitionTimingFunction={"fade-in-out"}
                 pageOnChange={this.pageOnChange}>
                 <FirstComponent />
                 <SecondComponent />
                 <ThirdComponent />
                 <FourthComponent goToPage={this.goToPage} />
                 <FifthComponent />
-                <FifthComponent />
+                <SixthComponent />
+                <SevenComponent />
+
 
 
             </ReactPageScroller>

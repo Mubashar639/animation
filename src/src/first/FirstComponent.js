@@ -1,11 +1,15 @@
-import React from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
-export default () => {
-    return (
-        <div className="component fifth-component">
 
-            <h1 class="animated bounce delay-2s">component 1</h1>
+import React, { Component } from 'react'
+import "./firstComponent.css"
+import image from "./3.jpg"
 
-        </div>
-    )
+export default class componentName extends Component {
+    render() {
+        return (
+            <div className="myfrist-compunent-a">
+                <img class="image-time" src={image} alt="some issue " />
+                <h1 class="animated bounce duration-1s" > this is simple text </h1>
+            </div>
+        )
+    }
 }

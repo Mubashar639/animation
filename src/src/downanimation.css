@@ -1,0 +1,155 @@
+.container0down {
+  animation: startMain0 0.5s linear forwards;
+}
+.item0down {
+  animation: startInner0 0.5s linear forwards;
+  transform: rotate(0deg);
+}
+.container1down {
+  animation: startMain 0.5s linear forwards;
+}
+.item1down {
+  animation: startInner 0.5s linear forwards;
+  transform: rotate(50.42deg);
+}
+.container2down {
+  animation: startMain2 0.5s linear forwards;
+}
+.item2down {
+  animation: startInner2 0.5s linear forwards;
+  transform: rotate(100.42deg);
+}
+.container3down {
+  animation: startMain3 0.5s linear forwards;
+}
+.item3down {
+  animation: startInner3 0.5s linear forwards;
+  transform: rotate(150.42deg);
+}
+
+.container4down {
+  animation: startMain4 0.5s linear forwards;
+}
+.item4down {
+  animation: startInner4 0.5s linear forwards;
+  transform: rotate(200.42deg);
+}
+.container5down {
+  animation: startMain5 0.5s linear forwards;
+}
+.item5down {
+  animation: startInner5 0.5s linear forwards;
+  transform: rotate(200.42deg);
+}
+.container6down {
+  animation: startMain6 0.5s linear forwards;
+}
+.item6down {
+  animation: startInner6 0.5s linear forwards;
+  transform: rotate(310.42deg);
+}
+@keyframes startMain0 {
+  0% {
+    transform: rotate(50.42deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes startInner0 {
+  100% {
+    transform: rotate(0.42deg);
+  }
+}
+@keyframes startMain {
+  0% {
+    transform: rotate(-50.42deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes startInner {
+  100% {
+    transform: rotate(0.42deg);
+  }
+}
+@keyframes startMain2 {
+  0% {
+    transform: rotate(-100.82deg);
+  }
+  100% {
+    transform: rotate(-50.42deg);
+  }
+}
+
+@keyframes startInner2 {
+  100% {
+    transform: rotate(50deg);
+  }
+}
+
+@keyframes startMain3 {
+  0% {
+    transform: rotate(-151.2deg);
+  }
+  100% {
+    transform: rotate(-100.82deg);
+  }
+}
+
+@keyframes startInner3 {
+  100% {
+    transform: rotate(100.42deg);
+  }
+}
+
+@keyframes startMain4 {
+  0% {
+    transform: rotate(-200.6deg);
+  }
+  100% {
+    transform: rotate(-151.2deg);
+  }
+}
+
+@keyframes startInner4 {
+  100% {
+    transform: rotate(151.42deg);
+  }
+}
+
+@keyframes startMain5 {
+  0% {
+    transform: rotate(-251deg);
+  }
+  100% {
+    transform: rotate(-200.6deg);
+  }
+}
+
+@keyframes startInner5 {
+  100% {
+    transform: rotate(200.6deg);
+  }
+}
+
+@keyframes startMain6 {
+  0% {
+    transform: rotate(-310deg);
+  }
+  100% {
+    transform: rotate(-251deg);
+  }
+}
+
+@keyframes startInner6 {
+  /* 0% {
+    transform: rotate(0deg);
+  } */
+  100% {
+    transform: rotate(251.42deg);
+  }
+}

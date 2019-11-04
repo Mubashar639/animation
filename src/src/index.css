@@ -6,70 +6,6 @@ body {
   overflow: hidden;
 }
 
-.title {
-  margin: 20px auto 0;
-  text-align: center;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-}
-
-.links .link {
-  margin-top: 20px;
-}
-
-.component {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
-
-.component.first-component {
-  background-color: gray;
-}
-
-.first-component--inside-scroller {
-  position: absolute;
-  right: 20px;
-  top: 100px;
-}
-
-.component.second-component {
-  background-color: rgb(30, 14, 90);
-}
-
-@keyframes colorani {
-  0% {
-    background-color: white;
-  }
-  50% {
-    background-color: rgba(0, 0, 255, 0.4);
-  }
-  100% {
-    background-color: blue;
-  }
-}
-
-.component.third-component {
-  background-color: blue;
-}
-
-.component.fourth-component {
-  background-color: yellow;
-}
-
-.component.fifth-component {
-  background-color: purple;
-}
-
-h2 {
-  margin: auto;
-  text-align: center;
-}
-
 .pagination-additional-class {
   margin: 0;
   position: fixed;
@@ -97,14 +33,14 @@ h2 {
 }
 
 #container {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   margin: 10px auto;
-  border: 1px solid #000;
+  border: 1px solid white;
   position: absolute;
   z-index: 2000;
   top: 28%;
-  left: -7%;
+  left: -14%;
   border-radius: 50%;
 }
 .container1 {
@@ -151,11 +87,12 @@ h2 {
   transform: rotate(310.42deg);
 }
 .item {
-  width: 30px;
+  width: 60px;
   height: 30px;
   line-height: 30px;
+  clip-path: polygon(10% 0, 87% 0, 100% 51%, 89% 100%, 11% 100%, 0 51%);
   text-align: center;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   position: absolute;
   background: #f00;
 }
@@ -248,5 +185,20 @@ h2 {
   } */
   100% {
     transform: rotate(251.42deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 240px;
+    height: 240px;
+    margin: 10px auto;
+    border: 1px solid white;
+    position: absolute;
+    z-index: 2000;
+    top: 59%;
+    left: -53%;
+
+    border-radius: 50%;
   }
 }

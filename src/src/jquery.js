@@ -1,9 +1,14 @@
 export default function jrun($) {
-    var radius = 120 // adjust to move out items in and out
+    var radius  // adjust to move out items in and out
     var fields = $(".item"),
         container = $("#container"),
         width = container.width(),
         height = container.height();
+        if(width===300){
+            radius=150
+        }else{
+            radius=120
+        }
     var angle = 0,
         step = (2 * Math.PI) / fields.length;
     fields.each(function () {
